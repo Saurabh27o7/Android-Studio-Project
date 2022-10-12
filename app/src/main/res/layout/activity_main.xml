@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TEAM A"
+                android:textSize="25sp" />
+
+            <TextView
+
+                android:id="@+id/edi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:text=""
+                android:layout_gravity="center" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" +3 Points"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="threeb"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ 2 Points"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="twob"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Free THROW"
+                android:onClick="oneb"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM B"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+            <TextView
+
+                android:id="@+id/edi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:text=""
+                android:layout_gravity="center" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text=" +3 Points"
+                android:onClick="threea"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="+ 2 Points"
+                android:onClick="twoa"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free THROW"
+                android:onClick="onea"
+                android:layout_marginHorizontal="10dp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+ <Button
+     android:layout_width="wrap_content"
+     android:text="Reset"
+     android:onClick="reset"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_centerInParent="true" />
+
+</RelativeLayout>
